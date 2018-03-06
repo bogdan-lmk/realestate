@@ -1,0 +1,60 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+		link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css")
+		link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet")
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+		
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body(class=pageClass)
+		.mobile-menu
+			nav.navigation-mobile
+				li.navigation-elment
+					a(href="/") home
+				li.navigation-elment
+					a(href="/") ABOUt US   
+				li.navigation-elment
+					a(href="/") OUR APARTMENTS
+				li.navigation-elment
+					a(href="/") Reviews  
+				li.navigation-elment
+					a(href="/") Blog
+				li.navigation-elment
+					a(href="/") contact us
+				button.button.button-mobile.button--sign-up sign up
+			button.hamburger.mobile-hamburger.hamburger--spring.is-active
+				span.hamburger-box
+					span.hamburger-inner
+		.wrapper
+			include ../modules/header
+			.content
+				block content
+			include ../modules/footer
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineLite.min.js")
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		script(src="static/js/jquery.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		script(type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
+		script(src="static/js/carousel.js")
+		block script
+		

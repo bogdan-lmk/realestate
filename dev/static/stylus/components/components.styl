@@ -1,0 +1,151 @@
+.content-overlay
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+.single-post-content-overlay
+  background: rgba(179, 181, 182, 1);
+  position: absolute;
+  height: 94%;
+  width: 94%;
+  left: 3%;
+  top: 3%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+.single-post-view
+    &:hover
+      background: rgba(0,0,0,0.7);
+      -webkit-transition: all 0.4s ease-in-out 0;
+      -moz-transition: all 0.4s ease-in-out 0;
+      transition: all 0.4s ease-in-out 0s;
+.single-post-view
+  &:hover .single-post-content-overlay
+    opacity 1
+
+.slide--cities
+  &:hover .content-overlay
+    opacity: 1
+
+.content-details
+  position: absolute;
+  text-align: center;
+  width: 60%;
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out 0s;
+
+.content-details p
+  color: #fff;
+  font-size: rem(16px)
+  padding 20px 0
+  background #cacdd0
+  text-transform uppercase
+
+.slide--cities
+  &:hover .content-details
+    top: 10%;
+    left: 50%;
+    opacity: 1;
+
+
+.overlay-info
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    opacity: 0;
+    color whiteColor
+    font-size rem(12px)
+    font-weight 300
+    position absolute
+    transform: translate(0%,0%);
+    transition: all 0.5s ease-in-out 0s;
+    text-transform capitalize
+
+.overlay-info-text--amount-bathrooms
+  margin-bottom 15px
+  position relative
+  &:before
+    content ''
+    width 20px
+    height 20px
+    background url("../img/general/bathtub.svg") no-repeat
+    position absolute
+    left: -30px;
+    bottom 0
+.overlay-info-text--square-meters
+  margin-bottom 15px
+  position relative
+  &:before
+    content ''
+    width 20px
+    height 20px
+    background url("../img/general/shape.svg") no-repeat
+    position absolute
+    left: -30px;
+    bottom 0
+.overlay-info-text--amount-bedrooms
+  margin-bottom 40px
+  position relative
+  &:before
+    content ''
+    width 20px
+    height 20px
+    background url("../img/general/bed.svg") no-repeat
+    position absolute
+    left: -30px;
+    bottom 0
+  &:after
+    content ''
+    width 30px
+    height 1px
+    background-color whiteColor
+    position absolute
+    bottom -20px
+    left -30px
+.overlay-info-text--location
+  position relative
+  &:before
+    content ''
+    width 20px
+    height 20px
+    background url("../img/general/location--s.svg") no-repeat
+    position absolute
+    left: -30px;
+    bottom 0
+.single-apartment-view
+  &:hover .overlay-info
+    opacity: 1;
+    transform: translate(0%,130%)
+
+.single-apartment-view
+  &:hover .icon
+    fill #4588f2
+    transition 0.3s ease-in-out
+    cursor pointer
+    transform: scale(1.2,1.2)
+    z-index 99
+
+.single-apartment-view
+  &:hover .content-overlay
+    opacity 1
+
+
+.fadeIn-bottom
+  top: 80%;
+
+.fadeIn-top
+  bottom: 55%;

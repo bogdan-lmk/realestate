@@ -1,0 +1,339 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	.main-carousel
+		.main-carousel-gallery
+			.slide.showing
+				img(src="../static/img/content/mg-slide2.jpg")
+				.slide-content
+					h1.slide-discount Save 10% on
+					h1.slide-location Europe & Britain
+					button.button-learn-more--slide learn more
+			.slide
+				img(src="../static/img/content/mg-slide1.jpg")
+			.slide
+				img(src="../static/img/content/mg-slide3.jpg")
+			.controls.main-carousel-controls
+				.mc-controls--prev
+					+icon('left-arrow-gc','icon-arrow-gc')
+				.mc-controls--next
+					+icon('right-arrow-gc','icon-arrow-gc')
+		.wrap-search-form
+			form.search-form
+				.search-form-row
+					.search-form-group.search-form-group--location
+						span.search-form-name Country,city or apartment
+						input.search-form-input.search-location
+						+icon('placeholder', 'search-form-icon')
+					.search-form-group
+						span.search-form-name Guest
+						input.search-form-input.search-guest
+						+icon('profile', 'search-form-icon')
+						+icon('down-arrow-search','search-form-icon--arrow')
+					.search-form-group
+						span.search-form-name Room
+						input.search-form-input.search-room
+						+icon('door', 'search-form-icon')
+						+icon('down-arrow-search','search-form-icon--arrow')
+				.search-form-row
+					.search-form-group
+						span.search-form-name Check-in
+						input.search-form-input.search-chek-in
+						+icon('calendar', 'search-form-icon')
+						+icon('down-arrow-search','search-form-icon--arrow')
+					.search-form-group
+						span.search-form-name Duration
+						input.search-form-input.search-duration
+						+icon('night', 'search-form-icon')
+						+icon('down-arrow-search','search-form-icon--arrow')
+					.search-form-group.search-form-group--checkout
+						span.search-form-name Check-out
+						p.search-form-chek-out-date Check Out Date
+					.search-form-group
+						button.button-search.button-search-form Search
+	.cities-block(data-aos="fade-down")
+		.container
+			.cities-block--title.title
+					h1 Explore stay or Work
+					h2 experience the finest cities
+			.cities-carousel
+				.cities-gallery
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+					.slide--cities
+						.content-overlay
+						img.content-image(src="../static/img/content/mg-slide2.jpg")
+						.content-details.fadeIn-bottom
+							p.content-textThis coming soon
+						.slide-content--cities
+							h1.cities-name Milano
+	.apartments-block(data-aos="fade-down")
+		.container
+			.apartments-block--title.title
+					h1 our offer are great
+					h2 popular apartments
+			.apartments-sort
+				a.sort-tab.sort-tab--active(href="/") Per Day
+				a.sort-tab(href="/") Per Month
+			.apartments-content
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+				.single-apartment
+					.single-apartment-view
+						img()
+						+icon('heart-in-like-circular-button')
+						.content-overlay
+						.overlay-info.fadeIn-top
+							span.overlay-info-text--amount-bathrooms 2 bathrooms
+							span.overlay-info-text--square-meters 2100 sqmtr
+							span.overlay-info-text--amount-bedrooms 2 bedrooms
+							span.overlay-info-text--location DELTA, 48 Boulevard Jourdan
+					.single-apartment-content
+						span.apartment-location London, Britain
+						span.apartment-bedroom Bedroom Boundless
+						.apartment-price-gap
+							span.price-gap from
+							span.color-price $70.00
+			button.button.button-view-all View All
+	.call-to
+		h3.call-to-subtitlte(data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease") Home Find
+		h2.call-to-title(data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease") Start searching fot awesome properties
+		button.button.button--get-started(data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease") Get Started
+	.testimonials-block(data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease")
+		.container
+			.testimonials-block--title.title
+					h1 What Client Say
+					h2 testimonials
+			.testimonials-content
+				.client
+					.client-img
+						img(src="../static/img/content/parker.jpg")
+					span.client-name Erica Parker
+					span.client-position Designer
+					p.client-text Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in
+				.client
+					.client-img
+						img(src="../static/img/content/parker.jpg")
+					span.client-name Erica Parker
+					span.client-position Designer
+					p.client-text Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in
+				.client
+					.client-img
+						img(src="../static/img/content/parker.jpg")
+					span.client-name Erica Parker
+					span.client-position Designer
+					p.client-text Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in
+				.client
+					.client-img
+						img(src="../static/img/content/parker.jpg")
+					span.client-name Erica Parker
+					span.client-position Designer
+					p.client-text Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in
+			.testimonials-controls
+				.ts-controls--prev
+					+icon('left-arrow-gc','icon-arrow-ts')
+				span.pages-view-number 1/16
+				.ts-controls--next
+					+icon('right-arrow-gc','icon-arrow-ts')
+	.blog(data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease")
+		.container
+			.blog--title.title
+					h1 latest news from us
+					h2 our blog
+			.blog-content
+				.single-post
+					.single-post-view
+						img()
+						.single-post-content-overlay
+					.single-post-info
+						span.post-date Jan 15, 2018
+						span.post-author Alice
+					.single-post-content
+						h3.post-heading Beautiful Resort Paradise, with mountain view 
+						p.post-text Marquee selectus non provisio incongrui ous feline nolo contendre olypian qua et rrels et gorilla congolium sic ad.
+					.read-more Read more
+				.single-post
+					.single-post-view
+						img()
+						.single-post-content-overlay
+					.single-post-info
+						span.post-date Jan 15, 2018
+						span.post-author Alice
+					.single-post-content
+						h3.post-heading Beautiful Resort Paradise, with mountain view 
+						p.post-text Marquee selectus non provisio incongrui ous feline nolo contendre olypian qua et rrels et gorilla congolium sic ad.
+					.read-more Read more
+				.single-post
+					.single-post-view
+						img()
+						.single-post-content-overlay
+					.single-post-info
+						span.post-date Jan 15, 2018
+						span.post-author Alice
+					.single-post-content
+						h3.post-heading Beautiful Resort Paradise, with mountain view 
+						p.post-text Marquee selectus non provisio incongrui ous feline nolo contendre olypian qua et rrels et gorilla congolium sic ad.
+					.read-more Read more
+				.single-post
+					.single-post-view
+						img()
+						.single-post-content-overlay
+					.single-post-info
+						span.post-date Jan 15, 2018
+						span.post-author Alice
+					.single-post-content
+						h3.post-heading Beautiful Resort Paradise, with mountain view 
+						p.post-text Marquee selectus non provisio incongrui ous feline nolo contendre olypian qua et rrels et gorilla congolium sic ad.
+					.read-more Read more
+				.single-post
+					.single-post-view
+						img()
+						.single-post-content-overlay
+					.single-post-info
+						span.post-date Jan 15, 2018
+						span.post-author Alice
+					.single-post-content
+						h3.post-heading Beautiful Resort Paradise, with mountain view 
+						p.post-text Marquee selectus non provisio incongrui ous feline nolo contendre olypian qua et rrels et gorilla congolium sic ad.
+					a.read-more Read more
+	.partners
+		.container
+			.partners--title.title
+					h1 find more about us
+					h2 our partners
+			.partners-content
+				.partners-logo
+					a(href="https://www.booking.com")
+						img(src="../static/img/content/booking.png")
+				.partners-logo
+					a(href="https://www.airbnb.com")
+						img(src="../static/img/content/airbnb.png")
+				.partners-logo
+					a(href="https://www.homeaway.com")
+						img(src="../static/img/content/hma.png")
+				.partners-logo
+					a(href="https://www.tripadvisor.com")
+						img(src="../static/img/content/ta.png")
+					
