@@ -38,22 +38,23 @@ $('.cities-gallery').slick({
        slidesToShow: 3,
        slidesToScroll: 3,
        infinite: true,
-       dots: true,
-       arrows: false
+       arrows: true
      }
    },
    {
      breakpoint: 768,
      settings: {
        slidesToShow: 3,
-       slidesToScroll: 3
+       slidesToScroll: 1,
      }
    },
    {
-     breakpoint: 480,
+     breakpoint: 640,
      settings: {
-       slidesToShow: 2,
-       slidesToScroll: 1
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows:false,
+       autoplay:false
      }
    }
    // You can unslick at a given breakpoint now by adding:

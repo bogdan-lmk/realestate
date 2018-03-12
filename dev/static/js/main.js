@@ -12,7 +12,7 @@ $('.sort-tab').click(function(e) {
     $('.sort-tab').removeClass('sort-tab--active');
     $(this).addClass('sort-tab--active');
 });
-/*
+
 var header = document.getElementsByClassName('header');
 var carousel = document.getElementsByClassName('main-carousel');
 var logo = document.getElementsByClassName('logo');
@@ -27,7 +27,7 @@ var tl = new TimelineLite();
     tl.staggerFrom(carousel, 1.75, {opactity:0, x:-1920, autoAlpha:0 }, "-=1.5");
 
 
-*/
+
 AOS.init({
     offset: 200,
     duration: 1250,
