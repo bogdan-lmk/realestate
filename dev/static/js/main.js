@@ -7,6 +7,11 @@ $('.sort-tab').click(function(e) {
     $('.sort-tab').removeClass('sort-tab--active');
     $(this).addClass('sort-tab--active');
 });
+$('.sort-tab').click(function(e) {
+    e.preventDefault();
+    $('.sort-tab').removeClass('sort-tab--active');
+    $(this).addClass('sort-tab--active');
+});
 /*
 var header = document.getElementsByClassName('header');
 var carousel = document.getElementsByClassName('main-carousel');
