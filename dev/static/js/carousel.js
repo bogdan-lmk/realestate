@@ -51,11 +51,19 @@ $('.cities-gallery').slick({
    {
      breakpoint: 640,
      settings: {
+       slidesToShow: 2,
+       slidesToScroll: 1,
+       arrows:false,
+       autoplay:true
+     }
+   },
+   {
+     breakpoint: 560,
+     settings: {
        slidesToShow: 1,
        slidesToScroll: 1,
        arrows:false,
-       autoplay:false
-     }
+     },
    }
    // You can unslick at a given breakpoint now by adding:
    // settings: "unslick"

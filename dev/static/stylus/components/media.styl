@@ -112,6 +112,8 @@
 @media(max-width 640px)
   .slide-location
       font-size: rem(56px)
+  .slide--cities
+    margin-right 10px
   .call-to-title
       font-size: 1.475rem
   .contact-info
@@ -132,7 +134,6 @@
     font-size: rem(44px)
     margin-bottom: 5%
   .slide--cities
-    width: 500px
     margin-right 0px
   .sort-tab
     width: 35%
@@ -140,6 +141,8 @@
     height 45vh
 
 @media(max-width 480px)
+  .contact-info
+    width: 75%
   .slide-content
     top 5%
   .controls
@@ -157,14 +160,11 @@
     font-size: rem(20px)
   .title
     h1
-      font-size rem(28px)
+      font-size rem(27px)
     h2
       font-size rem(16px)
   .cities-block
     margin 25% 0%
-  .slide--cities
-    width: 480px
-    margin-right 1%
   .single-post
     &:nth-child(3)
       margin-right: 0%
@@ -186,17 +186,54 @@
   .slide-discount
       font-size: rem(40px)
   .slide-location
-    font-size: 36px
+    font-size: rem(36px)
 
 @media(max-width 380px)
+  .main-carousel-gallery
+      height: 50vh
+  .controls.main-carousel-controls
+    display: none
   .contact-info
       flex-flow: wrap
-      margin-left: 10%
+      margin-left 10%
   .mobile-hamburger
-    top: 20%;
-    right: 18%;
+    top 20%
+    right 18%
   .navigation-mobile
-      left: 5px
-      top: 25%
-  .main-carousel-gallery
-    height: 100vh
+    left 5px
+    top 25%
+  .footer-link-row
+    flex-flow: wrap
+  .footer-link-block
+    margin-bottom: 10%
+  .call-to-title
+    font-size rem(14px)
+  .main-carousel
+    position: relative
+    height: 100%
+  .search-form
+    position relative
+  .search-form-group
+    width: 97%
+@media(max-width 320px)
+    .slide-discount
+        font-size: rem(20px)
+    .slide-location
+      font-size: rem(22px)
+    .button-learn-more--slide
+        font-size: 12px
+        background: #fff
+        padding: 15px 20px
+  .title
+    h1
+      font-size rem(18px)
+    h2
+      font-size rem(12px)
+  .footer-link-row
+    flex-flow: wrap
+  .footer-link-block
+    margin-bottom: 10%
+  .copyright
+    font-size rem(10px)
+  .copyright-link
+    font-size: rem(10px)
